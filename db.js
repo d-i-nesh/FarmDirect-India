@@ -3,7 +3,7 @@
     // const pool = mariadb.createPool({
     //     host: "localhost",
     //     user: "root",
-    //     password: "YOUR PASSWORD",
+    //     password: "YOUR PASSWORD"
     //     database: "farmerdb",
     //     connectionLimit: 5
     // });
