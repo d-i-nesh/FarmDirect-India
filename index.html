@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmDirect India</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            🌾 FarmDirect India
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#roles">Portals</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="darkModeBtn">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <h1>
+                Connecting Farmers Directly to Consumers
+            </h1>
+
+            <p>
+                Fresh vegetables, fruits, grains and organic products directly from Indian farmers to your doorstep.
+            </p>
+
+            <div class="hero-buttons">
+                <button onclick="showSection('farmerRegister')">
+                    Farmer Register
+                </button>
+
+                <button onclick="showSection('consumerRegister')">
+                    Consumer Register
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <h2>About FarmDirect India</h2>
+
+        <p>
+            FarmDirect India helps farmers sell products directly to consumers.
+            Our company acts as a trusted delivery partner.
+            Farmers get better profits and consumers receive fresh products.
+        </p>
+
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+
+        <h2>Our Features</h2>
+
+        <div class="feature-container">
+
+            <div class="card">
+                <i class="fa-solid fa-seedling"></i>
+                <h3>Farmer Portal</h3>
+                <p>Add products and manage orders.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h3>Consumer Portal</h3>
+                <p>Buy fresh products directly.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-truck"></i>
+                <h3>Delivery Support</h3>
+                <p>Fast and reliable delivery.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Admin Dashboard</h3>
+                <p>Manage farmers, products and orders.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Roles -->
+    <section class="roles" id="roles">
+
+        <h2>Select Your Portal</h2>
+
+        <div class="role-container">
+
+            <div class="role-card">
+                <h3>👨‍🌾 Farmer</h3>
+                <button onclick="showSection('farmerRegister')">
+                    Open
+                </button>
+            </div>
+
+            <div class="role-card">
+                <h3>🛒 Consumer</h3>
+                <button onclick="showSection('consumerRegister')">
+                    Open
+                </button>
+            </div>
+
+            <div class="role-card">
+                <h3>👨‍💼 Admin</h3>
+                <button onclick="showSection('adminLogin')">
+                    Open
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Farmer Registration -->
+<section class="form-section hidden" id="farmerRegister">
+
+    <div class="form-box">
+
+        <h2>Farmer Registration</h2>
+
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="text" id="mobile" placeholder="Mobile Number">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="aadhaar" placeholder="Aadhaar Number">
+        <input type="text" id="farmname" placeholder="Farm Name">
+        <input type="text" id="village" placeholder="Village">
+        <input type="text" id="district" placeholder="District">
+        <input type="text" id="state" placeholder="State">
+        <input type="text" id="upi" placeholder="UPI ID">
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="registerFarmer()">Register</button>
+
+    </div>
+
+</section>
+    <!-- Consumer Registration -->
+    <section class="form-section hidden" id="consumerRegister">
+
+        <div class="form-box">
+
+            <h2>Consumer Registration</h2>
+<!-- Consumer Registration -->
+<section class="form-section hidden" id="consumerRegister">
+
+    <div class="form-box">
+
+        <h2>Consumer Registration</h2>
+
+        <input type="text" placeholder="Full Name">
+        <input type="text" placeholder="Mobile Number">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Address">
+        <input type="text" placeholder="City">
+        <input type="text" placeholder="State">
+        <input type="password" placeholder="Password">
+
+        <button>Register</button>
+
+    </div>
+
+</section>
+    <!-- Admin Login -->
+    <section class="form-section hidden" id="adminLogin">
+
+        <div class="form-box">
+
+            <h2>Admin Login</h2>
+
+            <input type="text" placeholder="Admin ID">
+            <input type="password" placeholder="Password">
+
+            <button>Login</button>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Email: support@farmdirectindia.com</p>
+        <p>Phone: +91 9876543210</p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>🌾 FarmDirect India</h3>
+
+        <p>
+            Empowering Indian Farmers & Delivering Freshness
+        </p>
+
+        <p>
+            © 2026 FarmDirect India
+        </p>
+
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
