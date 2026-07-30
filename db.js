@@ -63,7 +63,7 @@ const mariadb = require("mariadb");
 
 // Create Database Connection Pool
 const pool = mariadb.createPool({
-    host: process.env.DB_HOST,
+    host:  "127.0.0.1",
     port: Number(process.env.DB_PORT),
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
